@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Gift for [Recipient's Name]</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url("niklas-hamann-Cxjh4S2Pmt8-unsplash.jpg");
+      background-size: cover; /* Ensures the image covers the entire screen */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      background-attachment: fixed; 
+      min-height: 100vh;
+      text-align: center;
+      overflow: hidden; /* Hides overflow so falling petals disappear off-screen */
+    }
+
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3em;
+      margin: 20px 0;
+      color: #0e0a0d;
+    }
+
+    p.subtitle {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5em;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .poem {
+      background-color: #fff;
+      opacity: 70%;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 80%;
+      height: 480px; /* Fixed height for the scrollable area */
+      margin: 0 auto;
+      overflow-y: auto; /* Enables vertical scrolling */
+      scroll-behavior: smooth; /* Smooth scrolling effect */
+            /* Hide scrollbar for Chrome, Safari, and Opera */
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE and Edge */
+    }
+
+    .poem::-webkit-scrollbar {
+      display: none; /* Hides the scrollbar */
+    
+}
+
+    .poem h2 {
+      font-size: 2em;
+      color: #2f4f4f;
+      margin-bottom: 20px;
+    }
+
+    .poem p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .poem-footer {
+      margin-top: 30px;
+      font-family: 'Satisfy', cursive;
+      font-size: 1.5em;
+      color: #2f4f4f;
+    }
+
+    /* Falling Petals */
+    .petal {
+      position: absolute;
+      top: -150px;
+      width: 25px;
+      height: 25px;
+      background-image: url('dandelion.jpg'); /* Rose petal icon */
+      background-size: cover;
+      animation: wind-blown 10s linear infinite;
+      /*animation: sway 4s ease-in-out infinite;*/
+      opacity: 0.9;
+    }
+
+    @keyframes wind-blown {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    100% {
+      transform: translate(200px, 100vh) rotate(720deg); /* Petal drifts sideways and falls */
+    }
+  }
+
+  /* Gentle swaying effect to make the petals move left and right as they fall */
+    @keyframes sway {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-50px); /* Moves the petal to the left */
+    }
+    100% {
+      transform: translateX(50px); /* Moves the petal to the right */
+    }
+  }
+
+    .petal:nth-child(2) {
+      left: 10%;
+      animation-duration: 9s, 5s;
+      animation-delay: 1s;
+    }
+
+    .petal:nth-child(3) {
+      left: 30%;
+      animation-duration: 10s, 6s;
+      animation-delay: 2s;
+    }
+
+    .petal:nth-child(4) {
+      left: 50%;
+      animation-duration: 11s, 5s;
+      animation-delay: 3s;
+    }
+
+    .petal:nth-child(5) {
+      left: 70%;
+      animation-duration: 12s, 7s;
+      animation-delay: 4s;
+    }
+
+    .petal:nth-child(6) {
+      left: 90%;
+      animation-duration: 14s, 6s;
+      animation-delay: 4s;
+    }
+
+    .petal:nth-child(7) {
+      left: 100%;
+      animation-duration: 16s, 8s;
+      animation-delay: 4s;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5em;
+      }
+
+      .poem h2 {
+        font-size: 1.8em;
+      }
+
+      .poem p {
+        font-size: 1.1em;
+      }
+
+      .poem-footer {
+        font-size: 1.3em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .poem h2 {
+        font-size: 1.5em;
+      }
+
+      .poem p {
+        font-size: 1em;
+      }
+
+      .poem-footer {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The Untold Journey of Mist and Air</h1>
+  
+
+  <div class="poem">
+    <p>
+        The mist, a veil that softly clings, <br>
+        Drifts through the morning light like dreams.<br>
+        The air, unseen yet ever near,<br>
+        Whispers through the leaves, a ghostly cheer.<br>
+        Though they wander the same silent paths,<br>
+        They touch but never truly grasp.<br><br>
+
+        The mist, heavy with secrets untold,<br>
+        Hangs over fields, a story cold.<br>
+        The air, forever light and free,<br>
+        Dances around it, wild and unseen.<br>
+        Their fates entwined, yet always apart,<br>
+        One grounded in presence, the other in heart.<br><br>
+
+        The mist, a fleeting, fragile breath,<br>
+        Lingers on the edge of life and death.<br>
+        It craves the air’s elusive form,<br>
+        To hold it close, to feel its warmth.<br>
+        But each attempt, though tender, fails,<br>
+        As love dissolves in vapor trails.<br><br>
+
+        And so they drift, both near and far,<br>
+        Like distant echoes of a star.<br>
+        Bound by fate, yet worlds apart,<br>
+        Two aching halves of the same heart.<br>
+        In their endless dance, we learn anew,<br>
+        Some connections are felt, but never true.<br><br>
+
+        Still, they yearn for what they’ll never know,<br>
+        To merge and feel the other’s glow.<br>
+        But some things in life are destined to be<br>
+        Parallel forces, longing, yet free.<br>
+        In their silent ballet, we see ourselves,<br>
+        Two souls adrift, on different shelves.<br><br>
+
+        Yet in their longing, something stays,<br>
+        A quiet sorrow that never decays.<br>
+        For though they part, they leave behind<br>
+        A trace of love, in heart and mind.<br>
+    </p>
+    <div class="poem-footer">
+      With love, from [Your Name] <br>
+      October 2024
+    </div>
+  </div>
+
+  <!-- Falling Petals -->
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  
+  
+
+</body>
+</html>
